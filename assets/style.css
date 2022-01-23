@@ -5,7 +5,6 @@
     margin: 0;
 }
 
-
 /* header */
 .header {
     padding: 20px 35px;
@@ -282,4 +281,8 @@ form h4 {
 .footer h3 {
   font-size: 13px;
   font-weight: 200;
+}
+
+.block {
+  padding-bottom: 100px;
 }
