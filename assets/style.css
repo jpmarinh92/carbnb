@@ -62,7 +62,19 @@
   }
 
 
+/* Rental Header */
 
+.rentheader {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding-top: 15x;
+  background-color:rgba(124, 37, 63, 0.904);
+  border-radius: 10px;
+  color: white;
+  font-weight: 100;
+  font-size: 25px;
+  font-style: italic;
+}
 
 /* Rental Form Page */
 
