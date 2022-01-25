@@ -224,7 +224,19 @@ form h4 {
     opacity: 0.8;
   }
 
+/* Profile section */
 
+/* Set additional styling options for the columns*/
+.column {
+float: left;
+width: 50%;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
 
 
 /*Footer Stuff*/
