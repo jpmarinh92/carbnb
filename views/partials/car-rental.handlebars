@@ -1,0 +1,19 @@
+<div class="column">
+  <div class="card">{{car.make}} {{car.model}}<h3>${{car.rate}} / day</h3>
+    <div>
+    <img src="{{car.photo}}">
+    </div> 
+    <div class="dropdown">
+        <button class="dropbtn">Details</button>
+        <div class="dropdown-content">
+          <p>Year: {{car.year}}</p>
+          <p>Color: {{car.color}}</p>
+          <p>Start Date: {{start_date}}</p>
+          <p>End Date: {{end_date}}</p>
+        </div>
+        <div class="rentDiv">
+          <a href="./cars/{{car.id}}" class="rent">Rent Again</a>
+        </div>
+      </div>
+  </div>
+</div>

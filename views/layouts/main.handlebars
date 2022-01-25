@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarBnB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css"> 
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  
+  <header>
+    <div class="header">
+        <h1> 
+            <a href="/">CarBnB &#128663;</a>
+        </h1>
+        <div>
+            <nav>
+            <ul>
+                <li>
+                    <!-- Rent -->
+                <a href="./">Rent</a>
+                </li>
+
+                <li>
+                    <!-- Host -->
+                <a href="/host">Host</a>
+                </li>
+                {{#if loggedIn}}
+                <li>
+                    <!-- Profile -->
+                <a href="/dashboard">Profile</a>
+                </li>
+
+                <li>
+                <button id="logout" class="btn-no-style">logout</button>
+                </li>
+                {{else}}
+                <li>
+                  <a href="/login">login</a>
+                </li>
+
+                <li>
+                  <a href="/signup">signup</a>
+                </li>
+                {{/if}}
+            </ul>
+            </nav>
+        </div>
+    </div>
+  </header>
+
+    <main>
+      {{{ body }}}
+    </main>
+    <div class="footer">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <h2>&copy; CarBnb, Inc. All rights reserved</h2>
+        <p> <h3>Privacy	• Terms	• Conditions</h3> </p>
+    </div>
+  </div>
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>

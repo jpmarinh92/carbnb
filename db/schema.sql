@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS carbnb;
+
+CREATE DATABASE carbnb;

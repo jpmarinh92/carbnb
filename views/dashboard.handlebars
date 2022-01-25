@@ -1,0 +1,16 @@
+<div class="column-left">
+<div class="column">
+    <h1 class="columnheader">Cars you've rented</h1>
+    {{#each rents as |rent|}}
+      {{> car-rental rent}}
+    {{/each}}
+  </div>
+
+  <div class="column-right">
+    <div class="column">
+        <h1 class="columnheader">Cars you've hosted</h1>
+        {{#each cars as |car|}}
+          {{> car-info car}}
+        {{/each}}
+      </div>
+  </div>

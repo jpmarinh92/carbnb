@@ -1,0 +1,28 @@
+<form class='rent-form'>
+
+  <div class="card">{{car.make}} {{car.model}}<h3>${{car.rate}} / day</h3>
+    <div>
+    <img src="{{car.photo}}">
+    </div> 
+    <div class="dropdown" data-id={{car.id}}>
+        <button class="dropbtn">Details</button>
+        <div class="dropdown-content">
+          <p>Year: {{car.year}}</p>
+          <p>Color: {{car.color}}</p>
+          <p class ="dates" data-dates={{disabledDates}}></p>
+        </div>
+      </div>
+  </div>
+  
+  <label for="start_date">From</label>
+  <input type="text"  id='start_date' name="start_date" name='start_date' readonly="true"/>
+
+  <label for="end_date">To</label>
+  <input type="text" id='end_date' name="end_date" name='end_date' readonly="true"/>
+
+  <button type="submit" class='rentCar'>Rent</button>
+</form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/javascript/renting.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
