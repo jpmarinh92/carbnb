@@ -1,5 +1,5 @@
 # carbnb
-# CarBnB
+
 ## Renting made easy
 CarBnB is a useful tool marketed to consumers who wish to ride in luxury.
 - Weekend vacations
